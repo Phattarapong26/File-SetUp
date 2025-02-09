@@ -22,7 +22,7 @@ function calculatePoints(amount : number) {
   return Math.floor(amount / 100) * 10;
 }
 
-app.post('/accumulate-points', async (req, res) => {
+app.post('/api/accumulatePoints', async (req, res) => {
   try {
     const { studentId, amount } = req.body;
 
